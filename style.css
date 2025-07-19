@@ -74,15 +74,32 @@ section {
   border-radius: 8px;
 }
 #gallery {
-  padding: 50px 20px;
+  padding: 30px 15px;
   text-align: center;
 }
 
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .image-gallery img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Circle shape */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* ✅ Responsive for phones and small screens */
+@media screen and (max-width: 600px) {
+  .image-gallery img {
+    width: 100px;
+    height: 100px;
+  }
+}
 }
 
 form {
