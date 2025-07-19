@@ -73,6 +73,17 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 8px;
 }
+#gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 form {
   display: flex;
